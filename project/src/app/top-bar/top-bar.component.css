@@ -1,0 +1,22 @@
+button {
+  height: 40px;
+  border-radius: 20px;
+  border-color: #f4ff81;
+  background: #c6ff00;
+}
+input {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+}
+.textOnline {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-family: "Albertus Extra Bold";
+  font-size: 45px;
+  float: left
+}
+a {
+  font-weight: bold;
+}

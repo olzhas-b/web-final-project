@@ -1,0 +1,43 @@
+<div class="main">
+  <div class="items">
+
+    <h3 >
+      <a [title]="product.name + '  details'" href="{{product.ref}}">
+        {{ product.name }}
+      </a>
+    </h3>
+    <img src="{{product.image}}" height="500px" width="500px" style="margin-top:10px;">
+    <div>
+      <h3 style="display: inline; padding-right: 20px;">price : {{ product.price }} </h3>
+      <h3 style="display: inline">rating : {{ product.rating }}  </h3>
+      <br>
+      <br>
+      <button (click)="share(product)" style="display: block; float: left">
+        Share
+      </button>
+    </div>
+    <div class="description" style="">
+      <p>Description</p>
+      <P>{{product.description}}</P>
+    </div>
+  </div>
+  <div class="items" style="float: left; width: 900px; height: 80%;">
+    <div class="toolbar">
+      <table>
+        <td>
+          <input type="button" value="Отзывы">
+        </td>
+        <td>
+          <input type="button" value="Характеристики">
+        </td>
+        <td>
+          <input type="button" value="Общая информация">
+        </td>
+
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<app-foot-bar></app-foot-bar>
