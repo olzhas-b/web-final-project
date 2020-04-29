@@ -1,0 +1,24 @@
+<section id="form" style="width: 400px; height: 500px; margin-left: 700px; margin-top: 150px; float: left; background-color: white; border-radius: 5px;">
+  <form style="margin: 20px;">
+    <label><strong>name</strong></label>
+    <input   id="name" type="text" class="fill" style="border: 1px solid black;" [(ngModel)]="data.name">
+
+    <label><strong>price</strong></label>
+    <input name="price" id="price" type="text" class="fill" style="border: 1px solid black;" [(ngModel)]="data.price" >
+
+    <label><strong>image</strong></label>
+    <input name="image" id="product_id" type="text" class="fill" style="border: 1px solid black;" [(ngModel)]="data.image">
+
+    <label><strong>category_id</strong></label>
+    <input name="category_id" id="category_id" type="text" class="fill" style="border: 1px solid black;" [(ngModel)]="data.category_id">
+
+    <label><strong>Description</strong></label>
+    <textarea id="message" name="description" id="w3mission" rows="4" cols="50" class="fill" style="border: 1px solid black; height: 200px" [(ngModel)]="data.description">
+    </textarea>
+
+    <br>
+    <button id="button_sign" (click)="add()"> <strong>ADD</strong>
+    </button>
+    <br>
+  </form>
+</section>

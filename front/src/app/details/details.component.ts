@@ -23,10 +23,15 @@ export class DetailsComponent implements OnInit {
     // my code in future
   }
   getDetails(): void {
-
     const id = +this.route.snapshot.paramMap.get('id');
     console.log(id)
     this.menuService.getDetails(id).subscribe(product => this.product = product);
   }
+  delete(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.menuService.deleteProductById(id).subscribe();
+    window.open(`http://localhost:4200/main`, '_self');
+  }
+
 
 }

@@ -9,6 +9,7 @@ import {DetailsComponent} from './details/details.component';
 import {BasketComponent} from './basket/basket.component';
 import {ContactComponent} from './contact/contact.component';
 import {ProfileComponent} from './profile/profile.component';
+import {EditorComponent} from './editor/editor.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path: 'details/:id', component: DetailsComponent},
   {path: 'basket', component: BasketComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path: 'editor', component: EditorComponent}
 
 ];
 

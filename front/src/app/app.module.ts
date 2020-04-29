@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { MenuComponent } from './menu/menu.component';
 import { HttpClientModule } from '@angular/common/http';
-import {InMemoryDataService} from './service/in-memory-data.service';
+// import {InMemoryDataService} from './service/in-memory-data.service';
 import { FootBarComponent } from './foot-bar/foot-bar.component';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
@@ -15,6 +15,8 @@ import { DetailsComponent } from './details/details.component';
 import { ContactComponent } from './contact/contact.component';
 import { BasketComponent } from './basket/basket.component';
 import { ProfileComponent } from './profile/profile.component';
+import { EditorComponent } from './editor/editor.component';
+import {FormsModule} from '@angular/forms';
 
 
 // @ts-ignore
@@ -34,15 +36,14 @@ import { ProfileComponent } from './profile/profile.component';
     ContactComponent,
     BasketComponent,
     ProfileComponent,
+    EditorComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataService, { dataEncapsulation: false }
-    ),
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
